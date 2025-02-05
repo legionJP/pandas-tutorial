@@ -22,6 +22,18 @@ print(df.describe())
 
 #-------------------------------------------------------------------------------#
 
+# Reading the CSV File: 
+jp = pd.read_csv("friends.csv")
+print(jp)
+print(jp["marks"])
+
+jp["marks"][0] = 98
+print(jp["marks"][0])    
+jp.to_csv("jp1.csv")
+
+jp.index = ["first", "second", "third", "fourth"]
+print(jp)
+# -----------------------------------------#
 
 # DataFrame 
 '''
